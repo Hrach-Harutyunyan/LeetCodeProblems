@@ -8,7 +8,7 @@ Do the above modifications to the input array in place and do not return anythin
 #include <vector>
 
 void duplicateZeros(std::vector<int>&); //  1-st solution:
-void duplicateZero(std::vector<int>&);  //  2-rd solution:
+void duplicateZero(std::vector<int>&);  //  2-nd solution:
 
 
 int main() {
@@ -32,7 +32,7 @@ void duplicateZeros(std::vector<int>& arr) {    // 1-st.
     }
 }
 
-void duplicateZero(std::vector<int>& arr) {        // 2-rd.
+void duplicateZero(std::vector<int>& arr) {        // 2-nd.
     for (int i{}; i < arr.size(); ++i) {
         if (arr[i] == 0 && i < arr.size() - 1) {
             int j = arr.size() - 1;
